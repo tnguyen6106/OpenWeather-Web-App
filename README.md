@@ -1,2 +1,2 @@
-## Final Project CS-495P 
-# OpenWeather-Web-App
+# Final Project CS-495P 
+### OpenWeather-Web-App
