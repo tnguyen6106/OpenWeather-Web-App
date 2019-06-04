@@ -5,11 +5,11 @@ const key = "b72d0821934296a82580c9a8b315a076"; //API key
 city = document.getElementById("search-txt");
 search = document.getElementById("search-btn");
 temp = document.getElementById("temp");
-snow = document.getElementById("snow");
+maxmin = document.getElementById("maxmin");
 cloudiness = document.getElementById("cloudiness");
 icon = document.getElementById("icon");
 wind = document.getElementById("wind");
-rain = document.getElementById("rain");
+description = document.getElementById("description");
 
 search.addEventListener("click", getWeather);
 city.addEventListener("keyup", pressed);
@@ -29,12 +29,12 @@ function responses(response){
   //temp, snow, cloudiness, wind speed, rain volume, humidity
   city.innerHTML = jsonObject.name;
   icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
-  temp.innerHTML = parseInt(jsonObject.main.temp - 273) + "°";
+  temp.innerHTML = parseInt(jsonObject.main.temp * (9/5) - 459.67) + "°";
   humidity.innerHTML = jsonObject.main.humidity + "%";
-  snow.innerHTML = jsonObject.snow;
-  cloudiness.innerHTML = jsonObject.main.clouds;
-  wind.innerHTML = jsonObject.wind;
-  rain.innerHTML = jsonObject.rain;
+  maxmin.innerHTML = "Min: " + parseInt(jsonObject.main.temp_min * (9/5) - 459.67) + " Max: " + parseInt(jsonObject.main.temp_max * (9/5) - 459.67);
+  cloudiness.innerHTML = jsonObject.clouds.all + "%";
+  wind.innerHTML = jsonObject.wind.speed + " meter/sec";
+  description.innerHTML = jsonObject.weather[0].description;
 
 
 }
