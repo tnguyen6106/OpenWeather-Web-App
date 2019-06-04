@@ -1,8 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <div>testing git branch</div>
+    <div class="container">
+      <header class="mainheader ">
+        <div class="userinput">
+          <div class="form-inline">
+            <input type="text" placeholder="Enter City Name" id="search-txt">
+
+               <a id="search-btn" href="#"><i class="fa fa-search"></i></a>
+
+          </div>
+        </div>
+      </header>
+      <br>
+
+      <main id="main">
+
+        <div class="row">
+          <div class="col-md-2 customWidth">
+            temperature
+          </div>
+          <div class="col-md-2 customWidth">
+            snow
+          </div>
+          <div class="col-md-2 customWidth">
+            cloudiness
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 customWidth">
+            wind speed
+          </div>
+          <div class="col-md-2 customWidth">
+            rain volume
+          </div>
+          <div class="col-md-2 customWidth">
+            humidity
+          </div>
+        </div>
+
+      </main>
+
+    </div>
   </body>
 </html>
