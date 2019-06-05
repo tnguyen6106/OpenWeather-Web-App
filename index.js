@@ -29,11 +29,11 @@ function responses(response){
   let jsonObject = JSON.parse(response);//temp, snow, cloudiness, wind speed, rain volume, humidity
   cityname.innerHTML = jsonObject.name;
   icon.src = "http://openweathermap.org/img/w/" + jsonObject.weather[0].icon + ".png";
-  temp.innerHTML = "Temp: " + parseInt(jsonObject.main.temp * (9/5) - 459.67) + "°";
+  temp.innerHTML = parseInt(jsonObject.main.temp * (9/5) - 459.67) + "°";
   humidity.innerHTML = "Humidity: " + jsonObject.main.humidity + "%";
-  maxmin.innerHTML = "Min/Max: " + parseInt(jsonObject.main.temp_min * (9/5) - 459.67) + "°/" + parseInt(jsonObject.main.temp_max * (9/5) - 459.67) + "°";
+  maxmin.innerHTML = parseInt(jsonObject.main.temp_min * (9/5) - 459.67) + "°/" + parseInt(jsonObject.main.temp_max * (9/5) - 459.67) + "°";
   cloudiness.innerHTML = "Cloudiness: " + jsonObject.clouds.all + "%";
-  wind.innerHTML = "Wind: " + jsonObject.wind.speed + " meter/sec";
+  wind.innerHTML = jsonObject.wind.speed + " meter/sec";
   description.innerHTML = jsonObject.weather[0].description;
 
 
