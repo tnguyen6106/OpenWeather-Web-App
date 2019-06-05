@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8"/>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
@@ -25,37 +26,31 @@
       </header>
       <br>
 
+      <div class="city">
+        <div class="placeholder">
+          <div id="cityname"> </div>
+            <img src"" id ="icon">
+
+        </div>
+      </div>
 
       <main id="main">
-
         <div class="row">
-          <div class="col-md-2 customWidth">
-            temperature
-          </div>
-          <div class="col-md-2 customWidth">
-            snow
-          </div>
-          <div class="col-md-2 customWidth">
-
-            cloudiness
-          </div>
+          <div class="col-md-2 customWidth" id="temp"></div>
+          <div class="col-md-2 customWidth" id="maxmin"></div>
+          <div class="col-md-2 customWidth" id="cloudiness"></div>
         </div>
+
         <div class="row">
 
-          <div class="col-md-2 customWidth">
-            wind speed
-          </div>
-          <div class="col-md-2 customWidth">
-            rain volume
-          </div>
-          <div class="col-md-2 customWidth">
-
-            humidity
-          </div>
+          <div class="col-md-2 customWidth" id="wind"></div>
+          <div class="col-md-2 customWidth" id="description"></div>
+          <div class="col-md-2 customWidth" id="humidity"></div>
         </div>
 
       </main>
 
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

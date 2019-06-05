@@ -6,18 +6,20 @@
   width: 1000px;
   height: 1000px;
 
-  
+
  }
 
-/*.row {
-  position: absolute;
-  top: 500px;
-}*/
+
+#temp, #maxmin, #cloudiness, #wind, #description, #humidity{
+  font-family: "Courier New";
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .customWidth {
   height: 100px;
   left: 90px;
-  background-color: white;
+  text-align: center;
   margin-right: 160px;
   margin-bottom: 50px;
 }
@@ -50,8 +52,33 @@ body{
   padding:10px;
 }
 
-  
-.icon{
-  padding-left: 5px;
+
+#icon{
+  height:200%;
+
 }
 
+
+
+.city{
+    position: absolute;
+    left:50%;
+    top:30%;
+    height:100px;
+    width: 100px;
+}
+#cityname{
+  font-family: "Courier New";
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+}
+.placeholder{
+  position:inherit;
+  left:50%;
+  top:50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+
+}
