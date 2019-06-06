@@ -21,11 +21,16 @@ function pressed(event){
     getWeather();
   }
 }
+
 function getWeather(){
+  if(city.value === ""){
+
+  }
+  else{
   request = "https://api.openweathermap.org/data/2.5/weather?q=" + city.value + "&APPID=" + key;
   httpRequestAsync(request, responses);
 }
-
+}
 function responses(response){
   console.log("hello");
   let jsonObject = JSON.parse(response);//temp, snow, cloudiness, wind speed, rain volume, humidity
