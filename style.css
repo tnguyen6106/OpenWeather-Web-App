@@ -162,7 +162,7 @@
 
 .featured-text{
   margin-left: 100px;
-  margin-bottom: 20px;
+
 }
 .icon-section .featured-text {
   padding: 2rem;
@@ -246,13 +246,15 @@
 }
 
 .top-buffer{
-  margin-top:30px;
+  margin-bottom: 15px;
 }
 footer {
+  
   padding: 5rem 0;
   background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  color:#64a19d;
 }
