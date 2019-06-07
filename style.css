@@ -82,7 +82,7 @@
   }
 }
 
-.masthead, .detailed-weather, .icon-section {
+.masthead, .detailed-weather, .icon-section{
   position: relative;
   width: 100%;
   height: auto;
@@ -159,16 +159,19 @@
   letter-spacing: 0.15rem;
   border: 0;
 }
-.icon-section {
-  padding: 8rem 0;
-}
 
+.featured-text{
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
 .icon-section .featured-text {
   padding: 2rem;
   font-family: 'Varela Round';
   font-size: 3.5rem;
   line-height: 1.5rem;
   letter-spacing: 0.8rem;
+
+
 }
 
 @media (min-width: 992px) {
@@ -244,4 +247,12 @@
 
 .top-buffer{
   margin-top:30px;
+}
+footer {
+  padding: 5rem 0;
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
