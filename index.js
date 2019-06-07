@@ -1,6 +1,5 @@
 //JS code
 
-
 const key = "b72d0821934296a82580c9a8b315a076"; //API key
 
 city = document.getElementById("search-txt");
@@ -22,6 +21,7 @@ function pressed(event){
   }
 }
 
+
 function getWeather(){
   if(city.value === ""){
 
@@ -40,6 +40,7 @@ function responses(response){
   humidity.innerHTML = jsonObject.main.humidity + "%";
   maxmin.innerHTML = parseInt(jsonObject.main.temp_min * (9/5) - 459.67) + "F/" + parseInt(jsonObject.main.temp_max * (9/5) - 459.67) + "F";
   cloudiness.innerHTML = jsonObject.clouds.all + "%";
+
   wind.innerHTML = jsonObject.wind.speed + " meter/sec";
   description.innerHTML = jsonObject.weather[0].description;
 
