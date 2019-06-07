@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
+    <link href="owfont-regular.css" rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" />
@@ -46,27 +47,107 @@
       </div>
     </div>
   </header>
-  <div class="city">
-       <div class="placeholder">
-         <div id="cityname"> </div>
-           <img src"" id ="icon">
 
+
+
+
+
+
+  <section  id="detailed-weather" class="detailed-weather">
+    <section id="second" class="icon-section">
+      <div class="container">
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+           <div id="cityname"> </div>
+         </div>
+       </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+         <div class="card py-4 h-100">
+           <div class="card-body text-center">
+             <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+             <h4 class="text-uppercase m-0">
+               <div id="temp"> </div>
+             </h4>
+           </div>
+         </div>
+       </div>
+
+       <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+          <div class="card-body text-center">
+            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+            <h4 class="text-uppercase m-0">
+              <div id="maxmin"> </div>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-3 mb-md-0">
+       <div class="card py-4 h-100">
+         <div class="card-body text-center">
+           <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+           <h4 class="text-uppercase m-0">
+             <div id="cloudiness"> </div>
+           </h4>
+         </div>
        </div>
      </div>
-  <section  id="detailed-weather" class="detailed-weather">
+
+      </div>
+
+
+    <div>
+
+  <div class="container">
     <div class="row">
-         <div class="col-md-2 customWidth" style="color:black" id="temp"></div>
-         <div class="col-md-2 customWidth" id="maxmin"></div>
-         <div class="col-md-2 customWidth" id="cloudiness"></div>
-       </div>
 
-       <div class="row">
-
-         <div class="col-md-2 customWidth" id="wind"></div>
-         <div class="col-md-2 customWidth" id="description"></div>
-         <div class="col-md-2 customWidth" id="humidity"></div>
+      <div class="col-md-4 mb-3 mb-md-0">
+       <div class="card py-4 h-100">
+         <div class="card-body text-center">
+           <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+           <h4 class="text-uppercase m-0">
+             <div id="wind"> </div>
+           </h4>
+         </div>
        </div>
-  </section>
+     </div>
+
+     <div class="col-md-4 mb-3 mb-md-0">
+      <div class="card py-4 h-100">
+        <div class="card-body text-center">
+          <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+          <h4 class="text-uppercase m-0">
+            <div id="description"> </div>
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 mb-3 mb-md-0">
+     <div class="card py-4 h-100">
+       <div class="card-body text-center">
+         <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+         <h4 class="text-uppercase m-0">
+           <div id="humidity"> </div>
+         </h4>
+       </div>
+     </div>
+   </div>
+
+    </div>
+
+
+  <div>
+</section>
 <script src="index.js"></script>
   </body>
 

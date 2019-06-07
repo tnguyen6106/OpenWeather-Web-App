@@ -1,4 +1,4 @@
-.masthead, .detailed-weather {
+.masthead, .detailed-weather, .icon-section {
   position: relative;
   width: 100%;
   height: auto;
@@ -74,4 +74,90 @@
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
+}
+.icon-section {
+  padding: 10rem 0;
+}
+
+.icon-section .featured-text {
+  padding: 2rem;
+  font-family: 'Varela Round';
+  font-size: 3.5rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.8rem;
+}
+
+@media (min-width: 992px) {
+  .icon-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+.icon-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .icon-section .project-text {
+    padding: 5rem;
+  }
+  .icon-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+img{
+  max-width: 100%;
+  border-right:100px;
+}
+
+
+.detailed-weather {
+  padding: 5rem 0 0;
+}
+
+.detailed-weather .card {
+  border: 0;
+  padding: : 20px;
+  border-bottom: 0.25rem solid #64a19d;
+}
+
+.detailed-weather .card h4 {
+  font-size: 0.8rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.detailed-weather .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+
+}
+
+.detailed-weather .social {
+  margin-top: 5rem;
+}
+
+.detailed-weather .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.detailed-weather .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.detailed-weather .social a:active {
+  color: #fff;
 }
