@@ -12,7 +12,6 @@
   border: 1px solid #64a19d;
 }
 
-
 #mainNav .navbar-toggler:focus {
   outline: none;
 }
@@ -81,7 +80,6 @@
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
-
 }
 
 .masthead, .detailed-weather, .icon-section{
@@ -162,7 +160,6 @@
   border: 0;
 }
 
-
 .featured-text{
   margin-left: 100px;
 
@@ -187,22 +184,7 @@
 .icon-section .project-text {
   padding: 3rem;
   font-size: 90%;
-
 }
-#cityname{
-  font-family: "Courier New";
-  font-size: 30px;
-  font-weight: bold;
-  color: black;
-}
-.placeholder{
-  position:inherit;
-  left:50%;
-  top:50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-
 
 @media (min-width: 992px) {
   .icon-section .project-text {
@@ -275,5 +257,4 @@ footer {
   background-attachment: scroll;
   background-size: cover;
   color:#64a19d;
-
 }
