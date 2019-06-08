@@ -2,7 +2,7 @@
 
 Check current date's weather based on a user's city input
 
-### Tech Stack
+## Tech Stack
 | Frontend  | Backend |
 | ---------- | ---------- |
 | HTML5 | JavaScript |
