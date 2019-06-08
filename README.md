@@ -10,7 +10,9 @@ Check current date's weather based on a user's city input
 | Boostrap 4  | |
 
 ## Dependencies
+
 **Heroku CLI**
+
 Installed the [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-php#set-up) for deployment.
 
 ## Deployement
