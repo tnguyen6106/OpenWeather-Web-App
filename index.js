@@ -3,15 +3,15 @@
 
 const key = "b72d0821934296a82580c9a8b315a076"; //API key
 
-city = document.getElementById("search-txt");
-search = document.getElementById("search-btn");
-temp = document.getElementById("temp");
-maxmin = document.getElementById("maxmin");
-cloudiness = document.getElementById("cloudiness");
+var city = document.getElementById("search-txt");
+var search = document.getElementById("search-btn");
+var temp = document.getElementById("temp");
+var maxmin = document.getElementById("maxmin");
+var cloudiness = document.getElementById("cloudiness");
 
-cityname = document.getElementById("cityname");
-wind = document.getElementById("wind");
-description = document.getElementById("description");
+var cityname = document.getElementById("cityname");
+var wind = document.getElementById("wind");
+var description = document.getElementById("description");
 
 search.addEventListener("click", getWeather);
 city.addEventListener("keyup", pressed);
